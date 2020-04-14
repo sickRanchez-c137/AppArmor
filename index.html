@@ -32,12 +32,14 @@
 <body style="background-color: #f1f1f1;padding: 0 18px;">
 	<h1 align="center">Apparmor Introduction</h1>
 	<p align="center">Prawar Poudel</p>
+	<hr>
 	<button type="button" class="collapsible"> <i>What this document is?</i></button>
 	<div class="content">
 		<p>
 			This document is prepared while I was a teaching assistant for Operating Systems. We wanted to do soemthing about the security feature that is available in Linux. Thus Apparmor was the final conclusion that we agreed upon. This document provides a brief introduction to this utility and hands-on examples on how to get started. Appropriate references will be cited as necessary as I did not develop any aspect of Apparmor.
 		</p>
 	</div>
+	<hr>
 	
 	<button type="button" class="collapsible"> <i>Introduction</i></button>
 	<div class="content">
@@ -48,6 +50,7 @@
 			Apparmor is available in linux kernel, and the confinement definition for each program is defined in a file called profile for each of the program binary. In these profiles are the rules that a program can and cannot perform certain actions. Based on the mode of Apparmor profiles for each program, the action attempted by the program binary is either just reported log files or the action is prohibited as well as reported. We will see this in later section. The content upto this point are derived from <a href="https://wiki.ubuntu.com/AppArmor">(this link)</a>.
 		</p>
 	</div>
+	<hr>
 
 	<button type="button" class="collapsible"> <i>MAC and DAC</i></button>
 	<div class="content">
@@ -61,6 +64,7 @@
 			In DAC, the owner of the resource specifies roles and permission for other users.
 		</p>
 	</div>
+	<hr>
 
 	<button type="button" class="collapsible"> <i>Apparmor: First Thing</i></button>
 	<div class="content">
@@ -136,6 +140,7 @@
 			</code>
 		</pre>
 	</div>
+	<hr>
 
 	<button type="button" class="collapsible"> <i>Apparmor Modes</i></button>
 	<div class="content">
@@ -149,6 +154,7 @@
 		<p>Profiles in Complain Mode only log the restricted action in the log files. They do not necesssarily restrict the program from perfoming the operation.</p>
 		<p>Foe the profiles in Enforce mode, the action is prohibited altogether.</p>
 	</div>
+	<hr>
 
 	<button type="button" class="collapsible"> <i>Practical Example: Getting Started</i></button>
 	<div class="content">
@@ -196,6 +202,7 @@
 		<p>For <i>caller</i></p>
 		<p align="center"><img src="imgs/2caller.PNG" alt="caller image here"></p>
 	</div>
+	<hr>
 
 	<button type="button" class="collapsible"> <i>Practical Example: Creating Profiles</i></button>
 	<div class="content">
@@ -274,6 +281,7 @@
 			The profile will be save in <i>/etc/apparmor.d</i> folder, and it should have the name as the full path of the executable binay itself with (/) replaced by (.).
 		</p>
 	</div>
+	<hr>
 
 	<button type="button" class="collapsible"> <i>Practical Example: Using Profiles</i></button>
 	<div class="content">
@@ -296,6 +304,7 @@
 		</p>
 		<p align="center"><img src="imgs/2caller.PNG"></p>
 	</div>
+	<hr>
 
 	<button type="button" class="collapsible"> <i>Practical Example: Log files</i></button>
 	<div class="content">
@@ -358,6 +367,7 @@
 			<br>
 			</code>
 	</div>
+	<hr>
 
 
 <script>
